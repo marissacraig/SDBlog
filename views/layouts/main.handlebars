@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tech Blog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="display-flex justify-space-between m-5 align-center bg-secondary-subtle" data-bs-theme="dark">
       <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">The Tech Blog</a>
+        <a class="text-dark bg-white shadow p-3 m-5 rounded" href="/">The Tech Blog</a>
       </h1>
-      <nav>
+      <nav class="nav justify-space-between m-3 fs-lg">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a class="nav-link btn" href="/">home</a>
+        <a class="nav-lin btn" href="/dashboard">dashboard</a>
+        <a class="nav-link btn" id="logout">logout</a>
         {{else}}
-        <a href="/login">login</a>
+        <a class="nav-link btn" href="/login">login</a>
         {{/if}}
       </nav>
+     
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
