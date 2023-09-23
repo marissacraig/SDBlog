@@ -13,6 +13,9 @@ Allows user to create blog posts within a private account and save them to a dat
 ## Installation
 Type the url into the domain bar and hit enter. This should take you to the main page.
 
+## Visuals
+![Walkthrough Video](Screenshot%202023-09-23%20at%2011.47.54%E2%80%AFAM.png)
+
 ## Usage
 Create an account via the login button. Once an account has been created, the user can then create a blog post. The completed blog post will be posted on the dashboard and main page.
 
